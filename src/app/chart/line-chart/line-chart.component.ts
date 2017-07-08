@@ -25,7 +25,7 @@ export class LineChartComponent implements OnInit {
   constructor(private dataSl: DataService, private colorSl: ColorService) { }
   ngOnInit() {
     this.lineChartData = this.dataSl.getData();
-     this.lineChartColors = this.colorSl.getColors();
+     // this.lineChartColors = this.colorSl.getColors();
 
   }
 

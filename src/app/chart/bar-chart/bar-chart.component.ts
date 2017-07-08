@@ -25,7 +25,7 @@ export class BarChartComponent implements OnInit {
   constructor(private dataSl: DataService, private colorSl: ColorService) { }
   ngOnInit() {
     this.barChartData = this.dataSl.getData();
-     this.barChartColors = this.colorSl.getColors();
+     // this.barChartColors = this.colorSl.getColors();
 
   }
 
