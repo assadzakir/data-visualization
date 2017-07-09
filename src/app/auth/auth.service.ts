@@ -10,6 +10,11 @@ export class AuthService {
 
   signupUser(email: string, password: string) {
     firebase.auth().createUserWithEmailAndPassword(email, password)
+      .then(
+        response => {
+          this.router.navigate(['/signin']);
+        }
+      )
       .catch(
         error => console.log(error)
       )
@@ -19,7 +24,7 @@ export class AuthService {
     firebase.auth().signInWithEmailAndPassword(email, password)
       .then(
         response => {
-          this.router.navigate(['/ng2-charts']);
+          this.router.navigate(['/home']);
           firebase.auth().currentUser.getToken()
             .then(
               (token: string) => this.token = token

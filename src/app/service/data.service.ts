@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
+import {Http} from "@angular/http";
 
 @Injectable()
 export class DataService {
+  constructor(private http: Http){}
 
   private Data: Array<any> = [
     {data: [28, 48, 40, 19, 86, 27, 90], label: 'type1', type: 'line', stack: 3, fill: false},
@@ -10,7 +12,14 @@ export class DataService {
   ];
 
   getData() {
-    return this.Data;
+    // this.http.get('https://datavisualization-f3d6b.firebaseio.com/data.json')
+    //   .subscribe(
+    //     (data) => {
+    //       console.log(data)
+    //     }
+    //   );
+    return this.Data
   }
+
 
 }

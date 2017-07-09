@@ -21,7 +21,8 @@ import { AuthGuard} from './auth/auth-guard.service'
 import { AuthService} from './auth/auth.service'
 import {ColorService } from './service/color.service'
 import { DataService } from './service/data.service';
-import { HomeComponent } from './home/home.component'
+import { HomeComponent } from './home/home.component';
+import { MainComponent } from './main/main.component'
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { HomeComponent } from './home/home.component'
     HeaderComponent,
     SignupComponent,
     SigninComponent,
-    HomeComponent
+    HomeComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

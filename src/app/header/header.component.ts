@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
 
   onLogout() {
     this.authService.logout();
-    this.route.navigate(['/home']);
+    this.route.navigate(['/signin']);
   }
 
 }
