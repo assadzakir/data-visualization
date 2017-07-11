@@ -31,7 +31,15 @@ export class LineChartComponent implements OnInit {
 
   // events
   public chartClicked(e: any): void {
-    console.log(e);
+    /*https://github.com/chartjs/Chart.js/issues/2292*/
+    if (e.active.length > 0) {
+      const datasetIndex = e.active[0]._datasetIndex;
+      const dataIndex = e.active[0]._index;
+      const dataObject = this.lineChartData[datasetIndex].data[dataIndex].dataObject
+      console.log(datasetIndex);
+      console.log(dataIndex);
+      console.log(dataObject);
+    }
   }
 
   public chartHovered(e: any): void {
