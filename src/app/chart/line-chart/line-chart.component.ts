@@ -9,6 +9,7 @@ import {ColorService} from '../../service/color.service';
 })
 export class LineChartComponent implements OnInit {
 
+  public showLineChart = false;
   public lineChartLegend = true;
   public lineChartType = 'line';
 
@@ -23,10 +24,10 @@ export class LineChartComponent implements OnInit {
   };
 
   constructor(private dataSl: DataService, private colorSl: ColorService) { }
-  ngOnInit() {
-    this.lineChartData = this.dataSl.getData();
-     // this.lineChartColors = this.colorSl.getColors();
-
+  async ngOnInit() {
+     this.lineChartData = await this.dataSl.getData();
+     this.lineChartColors = this.colorSl.getColors();
+     this.showLineChart = true;
   }
 
   // events

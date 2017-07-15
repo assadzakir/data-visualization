@@ -4,29 +4,32 @@ import { Injectable } from '@angular/core';
 export class ColorService {
 
   private Colors: Array<any> = [
-    { // grey
-      backgroundColor: 'rgba(148,159,177,0.2)',
-      borderColor: 'rgba(148,159,177,1)',
-      pointBackgroundColor: 'rgba(148,159,177,1)',
-      pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(148,159,177,0.8)'
+    {
+      backgroundColor: '#219A24',
+      hoverBackgroundColor: '#249a1e',
+      borderColor: '#1e9a1d',
+      pointBackgroundColor: '#1d9a16',
+      pointBorderColor: '#1e9a13',
+      pointHoverBackgroundColor: '#219A24',
+      pointHoverBorderColor: '#219A24'
     },
-    { // dark grey
-      backgroundColor: 'rgba(77,83,96,0.2)',
-      borderColor: 'rgba(77,83,96,1)',
-      pointBackgroundColor: 'rgba(77,83,96,1)',
-      pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(77,83,96,1)'
+    {
+      backgroundColor: '#F93602',
+      hoverBackgroundColor: '#f94219',
+      borderColor: '#f94219',
+      pointBackgroundColor: '#F93602',
+      pointBorderColor: '#F93602',
+      pointHoverBackgroundColor: '#F93602',
+      pointHoverBorderColor: '#F93602'
     },
-    { // grey
-      backgroundColor: 'rgba(148,159,177,0.2)',
-      borderColor: 'rgba(148,159,177,1)',
-      pointBackgroundColor: 'rgba(148,159,177,1)',
-      pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(148,159,177,0.8)'
+    {
+      backgroundColor: '#16329a',
+      hoverBackgroundColor: '#0f1c9a',
+      borderColor: '#15239a',
+      pointBackgroundColor: '#0c159a',
+      pointBorderColor: '#0a0b9a',
+      pointHoverBackgroundColor: '#1e0d9a',
+      pointHoverBorderColor: '#1f179a'
     }
   ];
 

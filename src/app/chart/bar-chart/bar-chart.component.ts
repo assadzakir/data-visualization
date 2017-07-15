@@ -9,6 +9,7 @@ import {ColorService} from '../../service/color.service';
 })
 export class BarChartComponent implements OnInit {
 
+  public showBarChart = false;
   public barChartLegend = true;
   public barChartType = 'bar';
 
@@ -23,9 +24,10 @@ export class BarChartComponent implements OnInit {
   };
 
   constructor(private dataSl: DataService, private colorSl: ColorService) { }
-  ngOnInit() {
-    this.barChartData = this.dataSl.getData();
-     // this.barChartColors = this.colorSl.getColors();
+  async ngOnInit() {
+      this.barChartData = await this.dataSl.getData();
+      this.barChartColors = this.colorSl.getColors();
+      this.showBarChart = true;
 
   }
 

@@ -1,4 +1,4 @@
-<div style="display: block;">
+<div *ngIf="showLineChart" style="display: block;">
   <canvas baseChart width="700" height="400"
           [datasets]="lineChartData"
           [labels]="lineChartLabels"
