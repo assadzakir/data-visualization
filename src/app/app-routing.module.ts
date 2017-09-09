@@ -7,6 +7,7 @@ import {ChartComponent} from './chart/chart.component';
 import {SignupComponent} from './auth/signup/signup.component';
 import {SigninComponent} from './auth/signin/signin.component';
 import {AuthGuard} from './auth/auth-guard.service';
+import {D3ChartsComponent} from './d3-charts/d3-charts.component';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/signin', pathMatch: 'full'},

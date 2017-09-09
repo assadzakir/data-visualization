@@ -22,7 +22,10 @@ import { AuthService} from './auth/auth.service'
 import {ColorService } from './service/color.service'
 import { DataService } from './service/data.service';
 import { HomeComponent } from './home/home.component';
-import { MainComponent } from './main/main.component'
+import { MainComponent } from './main/main.component';
+import { D3ChartsComponent } from './d3-charts/d3-charts.component'
+import { D3BarChartComponent } from './d3-charts/bar-chart/bar-chart.component';
+import { DirectedGraphComponent } from './d3-charts/directed-graph/directed-graph.component'
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { MainComponent } from './main/main.component'
     SignupComponent,
     SigninComponent,
     HomeComponent,
-    MainComponent
+    MainComponent,
+    D3ChartsComponent,
+    D3BarChartComponent,
+    DirectedGraphComponent
   ],
   imports: [
     BrowserModule,
