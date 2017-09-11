@@ -9,6 +9,7 @@ import {SigninComponent} from './auth/signin/signin.component';
 import {AuthGuard} from './auth/auth-guard.service';
 import {D3ChartsComponent} from './d3-charts/d3-charts.component';
 import {GojsChartsComponent} from './gojs-charts/gojs-charts.component';
+import {VisjsChartsComponent} from './visjs-charts/visjs-charts.component';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/signin', pathMatch: 'full'},
@@ -18,6 +19,7 @@ const appRoutes: Routes = [
     {path: 'ng2-charts', component: ChartComponent, canActivate: [AuthGuard]},
     {path: 'd3-charts', component: D3ChartsComponent, canActivate: [AuthGuard]},
     {path: 'gojs-charts', component: GojsChartsComponent, canActivate: [AuthGuard]},
+    {path: 'visjs-charts', component: VisjsChartsComponent, canActivate: [AuthGuard]},
   ]
   },
   {path: 'signin', component: SigninComponent},

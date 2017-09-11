@@ -27,7 +27,9 @@ import { D3ChartsComponent } from './d3-charts/d3-charts.component'
 import { D3BarChartComponent } from './d3-charts/bar-chart/bar-chart.component';
 import { DirectedGraphComponent } from './d3-charts/directed-graph/directed-graph.component';
 import { GojsChartsComponent } from './gojs-charts/gojs-charts.component';
-import { TransactionFlowComponent } from './gojs-charts/transaction-flow/transaction-flow.component'
+import { TransactionFlowComponent } from './gojs-charts/transaction-flow/transaction-flow.component';
+import { VisjsChartsComponent } from './visjs-charts/visjs-charts.component';
+import { VisTransactionFlowComponent } from './visjs-charts/vis-transaction-flow/vis-transaction-flow.component'
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { TransactionFlowComponent } from './gojs-charts/transaction-flow/transac
     D3BarChartComponent,
     DirectedGraphComponent,
     GojsChartsComponent,
-    TransactionFlowComponent
+    TransactionFlowComponent,
+    VisjsChartsComponent,
+    VisTransactionFlowComponent
   ],
   imports: [
     BrowserModule,
