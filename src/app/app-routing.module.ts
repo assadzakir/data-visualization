@@ -4,8 +4,7 @@ import {Routes, RouterModule} from '@angular/router';
 import {MainComponent} from './main/main.component';
 import {HomeComponent} from './home/home.component';
 import {ChartComponent} from './chart/chart.component';
-import {SignupComponent} from './auth/signup/signup.component';
-import {SigninComponent} from './auth/signin/signin.component';
+
 import {AuthGuard} from './auth/auth-guard.service';
 import {D3ChartsComponent} from './d3-charts/d3-charts.component';
 import {GojsChartsComponent} from './gojs-charts/gojs-charts.component';
@@ -21,9 +20,7 @@ const appRoutes: Routes = [
     {path: 'gojs-charts', component: GojsChartsComponent, canActivate: [AuthGuard]},
     {path: 'visjs-charts', component: VisjsChartsComponent, canActivate: [AuthGuard]},
   ]
-  },
-  {path: 'signin', component: SigninComponent},
-  {path: 'signup', component: SignupComponent},
+  }
 ];
 
 @NgModule({

@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 
+import { AuthModule } from './auth/auth.module'
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChartComponent } from './chart/chart.component';
@@ -13,8 +15,6 @@ import { BarChartComponent } from './chart/bar-chart/bar-chart.component';
 import { LineChartComponent } from './chart/line-chart/line-chart.component';
 import { ComparativeChartComponent } from './chart/comparative-chart/comparative-chart.component';
 import { HeaderComponent } from './header/header.component';
-import { SignupComponent } from './auth/signup/signup.component';
-import { SigninComponent } from './auth/signin/signin.component';
 
 
 import { AuthGuard} from './auth/auth-guard.service'
@@ -39,8 +39,6 @@ import { VisTransactionFlowComponent } from './visjs-charts/vis-transaction-flow
     LineChartComponent,
     ComparativeChartComponent,
     HeaderComponent,
-    SignupComponent,
-    SigninComponent,
     HomeComponent,
     MainComponent,
     D3ChartsComponent,
@@ -57,7 +55,8 @@ import { VisTransactionFlowComponent } from './visjs-charts/vis-transaction-flow
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpModule
+    HttpModule,
+    AuthModule
   ],
   providers: [ColorService, DataService, AuthGuard, AuthService],
   bootstrap: [AppComponent]
